@@ -24,7 +24,7 @@ func main() {
 		calibrations = append(calibrations, computeCalibration(scanner.Text()))
 	}
 
-	println("Result: ", sum(calibrations))
+	println("Result: ", sumSlice(calibrations))
 
 	if err := scanner.Err(); err != nil {
 		log.Fatal(err)
@@ -61,7 +61,7 @@ func computeCalibration(line string) int {
 	return result
 }
 
-func sum(numbers []int) int {
+func sumSlice(numbers []int) int {
 	result := 0
 
 	for _, number := range numbers {
