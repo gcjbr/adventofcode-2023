@@ -1,4 +1,4 @@
-package main
+package day01
 
 import (
 	"bufio"
@@ -7,8 +7,8 @@ import (
 	"strconv"
 )
 
-func main() {
-	f, err := os.Open("day01-01.txt")
+func Part1() {
+	f, err := os.Open("day01/day01-01.txt")
 
 	var calibrations []int
 
